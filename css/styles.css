@@ -1,0 +1,545 @@
+/*LA PÁGINA LA DISEÑÉ PARA PC, EN MOBIL QUEDA MUY BÁSICA*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Menu */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0%;
+    overflow: hidden;
+    transition: 0.7s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: black;
+}
+
+li {
+    float: left;
+    width: 22.33%;
+}
+
+.logo {
+    width: 33%;
+    padding: 10px 0 0;
+}
+
+.logo a:hover {
+    background-color: black;
+}
+
+li a {
+    display: block;
+    color: White;
+    text-align: center;
+    padding: 8px 16px 17px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: Black;
+    background-color: white;
+}
+
+
+/*auxiliar*/
+
+p {
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+
+img {
+    display: block;
+}
+
+.padding-top {
+    padding-top: 30px;
+}
+
+
+/*Pres*/
+
+.pres1 {
+    height: 100%;
+    background-image: url("../img/MachuPicchu2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 8% 5%;
+}
+
+.pres1 h1 {
+    font-size: 90px;
+    color: white;
+}
+
+.pres1 h2 {
+    font-size: 40px;
+    color: white;
+    padding: 0 30% 2% 0;
+}
+
+.pres2 {
+    height: 100%;
+    background-image: url("../img/imagen4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 8% 5%;
+}
+
+.pres2 h1 {
+    font-size: 90px;
+    color: white;
+    text-align: right;
+}
+
+.pres2 h2 {
+    font-size: 40px;
+    color: white;
+    padding: 0 0 2% 30%;
+    text-align: right;
+}
+
+.pres3 {
+    height: 100%;
+    background-image: url("../img/imagen6.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 8% 5%;
+}
+
+.pres3 h1 {
+    font-size: 90px;
+    color: white;
+}
+
+.pres3 h2 {
+    font-size: 40px;
+    color: white;
+    padding: 0 30% 2% 0;
+}
+
+
+/*Recorrido*/
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 0 15%;
+    background-color: black
+}
+
+.one-column h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 0 5% 10%;
+    background-color: black;
+}
+
+.two-column h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.ruta {
+    padding: 0 5% 16%;
+    background-color: black;
+    float: left;
+    width: 50%;
+}
+
+#ruta-boton {
+    padding: 0 5%;
+}
+
+.ruta h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.ruta-img {
+    padding: 0%;
+    width: 50%;
+    float: left;
+}
+
+.ruta-img img {
+    width: 683px;
+    height: 475px;
+}
+
+.img-normal-no {
+    display: none;
+}
+
+
+/*Discord y Mapa*/
+
+.two-column-widgets {
+    float: left;
+    width: 50%;
+    padding: 0 5%;
+    background-color: black;
+    text-align: center;
+    display: none;
+}
+
+.two-column-widgets h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.widgets {
+    float: left;
+    width: 50%;
+    padding: 0% 10%;
+    display: none;
+}
+
+#mapa {
+    padding: 3% 8%;
+}
+
+
+/*Recorrido*/
+
+
+/*boton*/
+
+.boton {
+    float: left;
+    padding: 10% 7% 0%;
+}
+
+.infografia {
+    border: none;
+    color: white;
+    padding: 4px 12px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.infografia:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+
+/*Video*/
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*tabla*/
+
+.tabla {
+    float: left;
+    width: 100%;
+    padding: 0 15%;
+    background-color: black
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 1% 10% 8px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+th {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/*Galeria*/
+
+.slideshow-container {
+    position: relative;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    transition: 0.6s ease;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 700px;
+}
+
+
+/*Footer*/
+
+.footer-titulo {
+    float: left;
+    width: 40%;
+    padding-left: 20%;
+    padding-bottom: 2%;
+}
+
+.footer {
+    padding: 1.4% 3% 2%;
+    float: left;
+    width: 60%;
+}
+
+.footer-elementos {
+    padding: 0% 3%;
+    float: left;
+}
+
+.footer-elementos a {
+    font-size: 20px;
+    color: white;
+    text-decoration: unset;
+}
+
+.footer-elementos a:hover {
+    color: gray;
+    transition: 0.3s;
+}
+
+.color-footer {
+    color: gray;
+}
+
+#titulo {
+    padding: 3%;
+}
+
+
+/*desaparece el scrowlbar*/
+
+ ::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*LA PÁGINA LA DISEÑÉ PARA PC, EN MOBIL QUEDA MUY BÁSICA*/
+
+@media screen and (max-width:700px) {
+    p {
+        font-size: 5vw;
+    }
+    .padding-2 {
+        padding: 0% 2%;
+    }
+    .upper {
+        text-transform: uppercase;
+    }
+    #padding-img-mobil {
+        padding: 0% 5%;
+    }
+    .pres1,
+    .pres2,
+    .pres3 {
+        display: none;
+    }
+    #nav {
+        display: none;
+    }
+    .one-column h1 {
+        font-size: 8vw;
+    }
+    .two-column {
+        width: 100%;
+        padding: 0% 10% 3%;
+    }
+    .two-column h2 {
+        font-size: 6vw;
+        text-align: center;
+    }
+    .ruta {
+        width: 100%;
+        text-align: center;
+    }
+    .ruta h2 {
+        font-size: 8vw;
+    }
+    .ruta-img {
+        width: 100%;
+        padding: 0% 10%;
+    }
+    .ruta-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .img-responsible-no {
+        display: none;
+    }
+    .img-normal-no {
+        display: block;
+    }
+    /*Boton*/
+    .boton {
+        float: left;
+        padding: 10% 10% 0%;
+    }
+    .infografia {
+        border: none;
+        color: white;
+        padding: 1vw 2vw 2vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 3vw;
+        font-weight: bolder;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 8px;
+    }
+    /*Tabla*/
+    .tabla {
+        float: left;
+        width: 100%;
+        padding: 0 2%;
+        background-color: black
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th,
+    td {
+        padding: 1% 5% 2%;
+        text-align: center;
+        border-bottom: 1vw solid white;
+        color: white;
+        font-size: 4vw;
+    }
+    th {
+        font-size: 5vw;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    /*Galeria*/
+    .slideshow-container img {
+        width: 100vw;
+        height: 60vw;
+    }
+    /*Footer*/
+    .footer-elementos a {
+        font-size: 2.5vw;
+    }
+    .footer-elementos p {
+        font-size: 2.5vw;
+    }
+    .footer-titulo {
+        padding-left: 5%;
+        padding-bottom: 5%;
+    }
+    .footer {
+        padding: 0% 3% 5% 0%;
+    }
+}
