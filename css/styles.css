@@ -413,6 +413,20 @@ th {
     .text-center {
         text-align: center;
     }
+    /*Menu*/
+    .logo {
+        width: 55%;
+        padding: 10px 0 0;
+    }
+    .openbtn {
+        background-color: black;
+        border: none;
+        color: white;
+        font-size: 5.5vw;
+    }
+    .boton-menu {
+        padding: 2vw 0vw 2vw 33%;
+    }
     /*Pres*/
     .pres1,
     .pres2,
@@ -449,6 +463,10 @@ th {
         width: 100%;
         height: 100vw;
         padding: 0% 15% 5%;
+    }
+    /*Video*/
+    .video iframe {
+        height: 60vw;
     }
     /*Recorrido*/
     .one-column h1 {

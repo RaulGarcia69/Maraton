@@ -13,17 +13,27 @@
 </head>
 
 <body>
-    <ul id="nav">
+    <ul id="nav" class="img-responsible-no">
         <li class="logo">
             <a href="#pres"><img src="./img/presentacion.png " alt="lol "></a>
         </li>
         <!--Menu pc-->
-        <div class="img-responsible-no">
+        <div>
             <li><a href="#recorrido">Recorrido</a></li>
             <li><a href="#Campeones">Campeones</a></li>
             <li><a href="#galeria">Galeria</a></li>
         </div>
     </ul>
+    <!--Menu mobil-->
+    <ul class="img-normal-no">
+        <li class="logo">
+            <a href="#pres"><img src="./img/presentacion.png " alt="lol "></a>
+        </li>
+        <li class="boton-menu"><button class="openbtn" onclick="openNav()">☰</button></li>
+    </ul>
+
+
+    <!--Pres-->
 
     <div class="row" id="pres">
         <div class="pres1">
@@ -43,10 +53,10 @@
             <h2>¡Disfruta explorando las maravillosas montañas y cordilleras de Machu Picchu!</h2>
         </div>
     </div>
+    <!--Video que solo sale en pc-->
     <div class="row">
-        <div class="video">
+        <div class="video img-responsible-no">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Zk9J5xnTVMA?autoplay=1&mute=1&controls=0&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
         </div>
     </div>
     <div class="row padding-top" id="recorrido">
@@ -65,224 +75,231 @@
             <p>Para tener una idea de lo duro del recorrido, basta con ver los tiempos de los ganadores en cada edición, que suelen superar las 6 e inclusive hasta las 7 horas.</p>
         </div>
     </div>
+    <!--Video que solo sale en mobil-->
+    <div class="row">
+        <div class="video img-normal-no">
+            <iframe width="560" height="915" src="https://www.youtube.com/embed/Zk9J5xnTVMA?autoplay=1&mute=1&controls=0&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-    <!--Ruta  -->
-    <!--Mapa solo en Mobil-->
-    <div class="row img-normal-no">
-        <div class="one-column padding-2">
-            <h1>¿DONDE EMPEZAMOS LA MARATÓN?</h1>
-            <p class="text-center">¡El viaje empieza en el Centro Histórico, Plaza de Armas!</p>
-            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6741.07776682982!2d-71.98034296960574!3d-13.51660235806094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd6739cd7f175%3A0x27c9a9082fc6343!2sCusco%2C%20Plaza%20de%20armas!5e1!3m2!1ses!2ses!4v1607367826354!5m2!1ses!2ses"
-                width="450" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-    </div>
-    <div class="row">
-        <div class="ruta">
-            <h2>EL CAMINO INCA</h2>
-            <P>Nuestra aventura comienza en Cusco, la capital arqueológica de las Américas, a una altitud de 11,150 pies. En Cusco podrás ver enormes muros, calles y vestigios del imperio Inca y período colonial español.</P>
-        </div>
-        <div class="ruta-img">
-            <img src="img/muro.jpg" alt="lol">
-        </div>
-        <!--Imagen que solo sale en pc-->
-        <div class="ruta-img img-responsible-no">
-            <img src="img/Andes.jpg" alt="lol">
-        </div>
-        <div class="ruta">
-            <h2>ANDES INCAS</h2>
-            <p>Después de un fascinante recorrido por Cusco, estaremos listos para correr, disfrutando de una espectacular variedad de senderos en los Andes del sur del Perú.</p>
-        </div>
-        <!--Imagen que solo sale en mobil-->
-        <div class="ruta-img img-normal-no">
-            <img src="img/Andes.jpg" alt="lol">
-        </div>
-    </div>
-    <div class="row">
-        <div class="ruta" id="ruta-boton">
-            <h2>MONTAÑA MACHU PICHU</h2>
-            <P>Durante el camino exploraremos las intrigantes ruinas de más fortalezas incas y disfrutaremos de amplias vistas desde los pasos altos Incas.</P>
-            <p>Una vez descendido la Puerta del Sol, nos encontraremos Machu Picchu, tras pasarlo, ya estaremos llegando a la meta por un sendero de bosque nuboso que se vuelve cada vez más exuberante y variado.</p>
-            <!--Imagen que solo sale en mobil-->
-            <div class="ruta-img img-normal-no" id="padding-img-mobil">
-                <img src="img/montaña.jpg" alt="lol">
+        <!--Ruta  -->
+        <!--Mapa solo en Mobil-->
+        <div class="row img-normal-no">
+            <div class="one-column padding-2">
+                <h1>¿DONDE EMPEZAMOS LA MARATÓN?</h1>
+                <p class="text-center">¡El viaje empieza en el Centro Histórico, Plaza de Armas!</p>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6741.07776682982!2d-71.98034296960574!3d-13.51660235806094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd6739cd7f175%3A0x27c9a9082fc6343!2sCusco%2C%20Plaza%20de%20armas!5e1!3m2!1ses!2ses!4v1607367826354!5m2!1ses!2ses"
+                    width="450" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
-            <!--Boton-->
-            <div class="boton">
-                <a href="./img/lol.jpg" download><button class="infografia">Más Información</button></a>
+        </div>
+        <div class="row">
+            <div class="ruta">
+                <h2>EL CAMINO INCA</h2>
+                <P>Nuestra aventura comienza en Cusco, la capital arqueológica de las Américas, a una altitud de 11,150 pies. En Cusco podrás ver enormes muros, calles y vestigios del imperio Inca y período colonial español.</P>
             </div>
-            <div class="boton">
-                <a href="./img/lol.jpg" download><button class="infografia">Inscríbete Ahora</button></a>
+            <div class="ruta-img">
+                <img src="img/muro.jpg" alt="lol">
             </div>
             <!--Imagen que solo sale en pc-->
-        </div>
-        <div class="ruta-img img-responsible-no">
-            <img src="img/montaña.jpg" alt="lol">
-        </div>
-    </div>
-
-    <!--Discord solo en Mobil-->
-    <div class="row img-normal-no">
-        <div class="one-column padding-2">
-            <h1>Tenemos servidor de Discord. ¡Únete!</h1>
-            <iframe id="discord" src="https://discord.com/widget?id=696048384276037765&theme=dark" width="400" height="700" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div>
-    </div>
-
-
-    <!--Campeones  -->
-
-    <div class="row padding-top" id="Campeones">
-        <div class="one-column padding-2">
-            <h1>¡Sé uno de nuestros muchos campeones y únete a correr!</h1>
-        </div>
-        <div class="tabla">
-            <table>
-                <tr>
-                    <th>Año</th>
-                    <th>Nombre</th>
-                    <th>Tiempo</th>
-                </tr>
-                <tr>
-                    <td>2019</td>
-                    <td>Griffin James</td>
-                    <td>08:40:05</td>
-                </tr>
-                <tr>
-                    <td>2018</td>
-                    <td>Vanessa Stephens</td>
-                    <td>08:49:18</td>
-                </tr>
-                <tr>
-                    <td>2017</td>
-                    <td>Ron Swanson</td>
-                    <td>08:39:58</td>
-                </tr>
-                <tr>
-                    <td>2016</td>
-                    <td>Amanda Brown</td>
-                    <td>08:43:25</td>
-                </tr>
-                <tr>
-                    <td>2015</td>
-                    <td>Nicole Smith</td>
-                    <td>08:41:08</td>
-                </tr>
-                <tr>
-                    <td>2014</td>
-                    <td>Chris Lavoie</td>
-                    <td>08:40:21</td>
-                </tr>
-                <tr>
-                    <td>2013</td>
-                    <td>Diana Yee</td>
-                    <td>08:45:01</td>
-                </tr>
-                <tr>
-                    <td>2012</td>
-                    <td>Dawn Smith</td>
-                    <td>08:39:48</td>
-                </tr>
-                <tr>
-                    <td>2011</td>
-                    <td>Lesley Walker</td>
-                    <td>08:44:11</td>
-                </tr>
-                <tr>
-                    <td>2010</td>
-                    <td>Emily Bertram</td>
-                    <td>08:41:22</td>
-                </tr>
-                <tr>
-                    <td>2009</td>
-                    <td>Bernard Norde</td>
-                    <td>08:43:58</td>
-                </tr>
-                <tr>
-                    <td>2008</td>
-                    <td>David Miller</td>
-                    <td>08:38:37</td>
-                </tr>
-                <tr>
-                    <td>2007</td>
-                    <td>Anna Wester</td>
-                    <td>08:40:26</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-
-    <!--Galeria-->
-
-    <div class="row padding-top" id="galeria">
-        <div class="one-column">
-            <h1>Y sobre todo.<br>¡Disfruta de las vistas!</h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="./img/Andes.jpg">
+            <div class="ruta-img img-responsible-no">
+                <img src="img/Andes.jpg" alt="lol">
             </div>
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="./img/imagen3.jpg">
+            <div class="ruta">
+                <h2>ANDES INCAS</h2>
+                <p>Después de un fascinante recorrido por Cusco, estaremos listos para correr, disfrutando de una espectacular variedad de senderos en los Andes del sur del Perú.</p>
             </div>
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="./img/imagen7.jpg">
+            <!--Imagen que solo sale en mobil-->
+            <div class="ruta-img img-normal-no">
+                <img src="img/Andes.jpg" alt="lol">
             </div>
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="./img/imagen2.jpg">
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="./img/MachuPicchu.jpg">
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="./img/imagen1.jpg">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <br>
-    </div>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
+        <div class="row">
+            <div class="ruta" id="ruta-boton">
+                <h2>MONTAÑA MACHU PICHU</h2>
+                <P>Durante el camino exploraremos las intrigantes ruinas de más fortalezas incas y disfrutaremos de amplias vistas desde los pasos altos Incas.</P>
+                <p>Una vez descendido la Puerta del Sol, nos encontraremos Machu Picchu, tras pasarlo, ya estaremos llegando a la meta por un sendero de bosque nuboso que se vuelve cada vez más exuberante y variado.</p>
+                <!--Imagen que solo sale en mobil-->
+                <div class="ruta-img img-normal-no" id="padding-img-mobil">
+                    <img src="img/montaña.jpg" alt="lol">
+                </div>
+                <!--Boton-->
+                <div class="boton">
+                    <a href="./img/lol.jpg" download><button class="infografia">Más Información</button></a>
+                </div>
+                <div class="boton">
+                    <a href="./img/lol.jpg" download><button class="infografia">Inscríbete Ahora</button></a>
+                </div>
+                <!--Imagen que solo sale en pc-->
+            </div>
+            <div class="ruta-img img-responsible-no">
+                <img src="img/montaña.jpg" alt="lol">
+            </div>
+        </div>
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+        <!--Discord solo en Mobil-->
+        <div class="row img-normal-no">
+            <div class="one-column padding-2">
+                <h1>Tenemos servidor de Discord. ¡Únete!</h1>
+                <iframe id="discord" src="https://discord.com/widget?id=696048384276037765&theme=dark" width="400" height="700" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+        </div>
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
 
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-                slideIndex = 1
+        <!--Campeones  -->
+
+        <div class="row padding-top" id="Campeones">
+            <div class="one-column padding-2">
+                <h1>¡Sé uno de nuestros muchos campeones y únete a correr!</h1>
+            </div>
+            <div class="tabla">
+                <table>
+                    <tr>
+                        <th>Año</th>
+                        <th>Nombre</th>
+                        <th>Tiempo</th>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>Griffin James</td>
+                        <td>08:40:05</td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>Vanessa Stephens</td>
+                        <td>08:49:18</td>
+                    </tr>
+                    <tr>
+                        <td>2017</td>
+                        <td>Ron Swanson</td>
+                        <td>08:39:58</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>Amanda Brown</td>
+                        <td>08:43:25</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td>Nicole Smith</td>
+                        <td>08:41:08</td>
+                    </tr>
+                    <tr>
+                        <td>2014</td>
+                        <td>Chris Lavoie</td>
+                        <td>08:40:21</td>
+                    </tr>
+                    <tr>
+                        <td>2013</td>
+                        <td>Diana Yee</td>
+                        <td>08:45:01</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>Dawn Smith</td>
+                        <td>08:39:48</td>
+                    </tr>
+                    <tr>
+                        <td>2011</td>
+                        <td>Lesley Walker</td>
+                        <td>08:44:11</td>
+                    </tr>
+                    <tr>
+                        <td>2010</td>
+                        <td>Emily Bertram</td>
+                        <td>08:41:22</td>
+                    </tr>
+                    <tr>
+                        <td>2009</td>
+                        <td>Bernard Norde</td>
+                        <td>08:43:58</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>David Miller</td>
+                        <td>08:38:37</td>
+                    </tr>
+                    <tr>
+                        <td>2007</td>
+                        <td>Anna Wester</td>
+                        <td>08:40:26</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!--Galeria-->
+
+        <div class="row padding-top" id="galeria">
+            <div class="one-column">
+                <h1>Y sobre todo.<br>¡Disfruta de las vistas!</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./img/Andes.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./img/imagen3.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./img/imagen7.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./img/imagen2.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./img/MachuPicchu.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./img/imagen1.jpg">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+        </div>
+
+        <!--Galeria.-->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
             }
-            if (n < 1) {
-                slideIndex = slides.length
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
             }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
+        </script>
 
 </body>
 
