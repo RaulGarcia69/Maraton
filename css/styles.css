@@ -424,7 +424,7 @@ th {
 }
 
 
-/*LA PÁGINA LA DISEÑÉ PARA PC, EN MOBIL QUEDA MUY BÁSICA*/
+/*LA PÁGINA LA DISEÑÉ PARA PC, EN MOBIL QUEDA MUY BÁSICA-------------------------------------------------------*/
 
 @media screen and (max-width:700px) {
     p {
@@ -439,14 +439,32 @@ th {
     #padding-img-mobil {
         padding: 0% 5%;
     }
+    /*Pres*/
     .pres1,
     .pres2,
     .pres3 {
-        display: none;
+        display: inline-block;
+        height: 150vw;
+        padding: 40% 0% 5%;
+        text-align: center;
     }
-    #nav {
-        display: none;
+    .pres1 h1,
+    .pres2 h1,
+    .pres3 h1 {
+        font-size: 12vw;
+        text-align: center;
     }
+    .pres1 h2,
+    .pres2 h2,
+    .pres3 h2 {
+        font-size: 5vw;
+        padding: 30% 5% 2%;
+        text-align: center;
+    }
+    .pres2 {
+        background-image: url("../img/imagen4-mobil.jpg");
+    }
+    /*Recorrido*/
     .one-column h1 {
         font-size: 8vw;
     }
@@ -503,7 +521,7 @@ th {
     .tabla {
         float: left;
         width: 100%;
-        padding: 0 2%;
+        padding: 0 4%;
         background-color: black
     }
     table {
