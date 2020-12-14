@@ -25,12 +25,18 @@
         </div>
     </ul>
     <!--Menu mobil-->
-    <ul class="img-normal-no">
+    <ul class="img-normal-no" id="main">
         <li class="logo">
             <a href="#pres"><img src="./img/presentacion.png " alt="lol "></a>
         </li>
         <li class="boton-menu"><button class="openbtn" onclick="openNav()">☰</button></li>
     </ul>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#recorrido" onclick="closeNav()">Recorrido</a>
+        <a href="#Campeones" onclick="closeNav()">Campeones</a>
+        <a href="#galeria" onclick="closeNav()">Galeria</a>
+    </div>
 
 
     <!--Pres-->
@@ -300,7 +306,18 @@
                 dots[slideIndex - 1].className += " active";
             }
         </script>
+        <!--Menu mobil-->
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "40vw";
+                document.getElementById("main").style.marginRight = "25vw";
+            }
 
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginRight = "0";
+            }
+        </script>
 </body>
 
 <!--Al poner los vinculos se añadia padding abajo por que si, por eso lo hecho así.-->
