@@ -383,9 +383,6 @@
         .upper {
             text-transform: uppercase;
         }
-        #padding-img-mobil {
-            padding: 13% 5% 0%;
-        }
         .text-center {
             text-align: center;
         }
@@ -488,17 +485,23 @@
         .ruta {
             width: 100%;
             text-align: center;
+            padding: 0 5% 5%;
         }
         .ruta h2 {
             font-size: 8vw;
         }
         .ruta-img {
             width: 100%;
-            padding: 0% 10% 10%;
         }
         .ruta-img img {
             width: 100%;
             height: 100%;
+        }
+        #ruta-boton {
+            padding: 0%;
+        }
+        #ruta-boton p {
+            padding: 0 5% 5%;
         }
         .img-responsible-no {
             display: none;
@@ -509,7 +512,7 @@
         /*Boton*/
         .boton {
             float: left;
-            padding: 10% 11% 10%;
+            padding: 10% 12% 10%;
         }
         .infografia {
             border: none;
